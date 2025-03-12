@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleCGFSMobileApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <!-- App Logo -->
+            <Image
+                Source="cgfs.png"
+                Aspect="AspectFit"
+                SemanticProperties.Description="Freestore Mobile App Logo" />
+
+            <!-- App Title -->
+            <Label
+                Text="Freestore Mobile App"
+                Style="{StaticResource Headline}"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <!-- Start Registration Button -->
+            <Button
+                Text="Start Registration"
+                x:Name="StartRegistrationButton"
+                BackgroundColor="#007AFF"
+                TextColor="White"
+                FontSize="18"
+                Padding="10"
+                Clicked="OnStartRegistrationClicked"
+                HorizontalOptions="Fill"
+                IsVisible="{Binding IsNotRegistered}" />
+
+            <!-- Profile Button -->
+            <Button
+                Text="Profile"
+                x:Name="ProfileButton"
+                BackgroundColor="#007AFF"
+                TextColor="White"
+                FontSize="18"
+                Padding="10"
+                Clicked="OnProfileClicked"
+                HorizontalOptions="Fill"
+                IsVisible="{Binding IsRegistered}" />
+
+            <!-- Check-In Button -->
+            <Button
+                Text="Check-In"
+                x:Name="CheckInButton"
+                BackgroundColor="#007AFF"
+                TextColor="White"
+                FontSize="18"
+                Padding="10"
+                Clicked="OnCheckInClicked"
+                HorizontalOptions="Fill"
+                IsVisible="{Binding IsRegistered}"
+                IsEnabled="{Binding CanCheckIn}" />
+
+            <!-- View Household Button -->
+            <Button
+                Text="View Household"
+                x:Name="HouseholdButton"
+                BackgroundColor="#007AFF"
+                TextColor="White"
+                FontSize="18"
+                Padding="10"
+                Clicked="OnHouseholdClicked"
+                HorizontalOptions="Fill"
+                IsVisible="{Binding IsHeadOfHousehold}" />
+
+            <!-- View Allocations Button -->
+            <Button
+                Text="View Allocations"
+                x:Name="AllocationsButton"
+                BackgroundColor="#007AFF"
+                TextColor="White"
+                FontSize="18"
+                Padding="10"
+                Clicked="OnAllocationsClicked"
+                HorizontalOptions="Fill"
+                IsVisible="{Binding IsRegistered}" />
+
+            <!-- Clear GUID Button (For Testing) -->
+            <Button
+                Text="Clear GUID"
+                x:Name="ClearGuidButton"
+                BackgroundColor="Red"
+                TextColor="White"
+                FontSize="18"
+                Padding="10"
+                Clicked="OnClearGuidClicked"
+                HorizontalOptions="Fill"
+                IsVisible="{Binding IsRegistered}" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

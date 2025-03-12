@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleCGFSMobileApp", "SampleCGFSMobileApp\SampleCGFSMobileApp.csproj", "{74C6270E-94AF-4973-88E0-73CADE23BA15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74C6270E-94AF-4973-88E0-73CADE23BA15}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{74C6270E-94AF-4973-88E0-73CADE23BA15}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{74C6270E-94AF-4973-88E0-73CADE23BA15}.Debug|Any CPU.Deploy.0 = Release|Any CPU
+		{74C6270E-94AF-4973-88E0-73CADE23BA15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C6270E-94AF-4973-88E0-73CADE23BA15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C6270E-94AF-4973-88E0-73CADE23BA15}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C89A96F1-379F-4129-BD9B-67807798BD14}
+	EndGlobalSection
+EndGlobal
